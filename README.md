@@ -10,4 +10,4 @@
 
 ## BiuJS[v1.0]说明文档
 
-[BiuJS[v1.0]说明文档(1)：总体结构](https://github.com/veedrin/biu/issues/1)
+[总体结构](https://github.com/veedrin/biu/issues/1)
