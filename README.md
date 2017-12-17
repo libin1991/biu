@@ -2,6 +2,8 @@
 
 <h1 align="center">BiuJS</h1>
 
+<br>
+
 > BiuJS是一个轻巧的mvvm框架<br>
 > 它实现了数据的双向绑定<br>
 > 并提供一些基本的指令帮助你提升效率，比如`$for`，`$model`，`$if`，`$click`，`$style`<br>
