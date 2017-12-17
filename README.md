@@ -1,6 +1,6 @@
 ![biu](https://raw.githubusercontent.com/veedrin/biu/master/logo/logo.png)
 
-<h2 align="center">Supporting Vue.js</h2>
+<h2 align="center">Biu.js</h2>
 
 BiuJS是一个轻巧的mvvm框架
 
