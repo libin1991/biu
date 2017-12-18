@@ -1,4 +1,4 @@
-![biu](https://raw.githubusercontent.com/veedrin/biu/master/logo/logo.png)
+![logo](https://raw.githubusercontent.com/veedrin/biu/master/logo/logo.png)
 
 <h1 align="center">BiuJS</h1>
 
@@ -12,4 +12,6 @@
 
 ## BiuJS[v1.0]说明文档
 
-[总体结构](https://github.com/veedrin/biu/issues/1)
+1. [总体结构](https://github.com/veedrin/biu/issues/1)
+
+2. [数据劫持](https://github.com/veedrin/biu/issues/2)
