@@ -18,6 +18,8 @@
 
 3. [文本编译](https://github.com/veedrin/biu/issues/3)
 
-## 立flag
+<br>
 
-2018年2月1日前发布[v1.1]版，预计加入虚拟DOM，敬请期待
+## flag
+
+2018年2月1日前发布[v1.1]版本，预计加入虚拟DOM，敬请期待
