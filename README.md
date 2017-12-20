@@ -18,6 +18,8 @@
 
 3. [文本编译](https://github.com/veedrin/biu/issues/3)
 
+4. [$if 指令](https://github.com/veedrin/biu/issues/4)
+
 <br>
 
 ## flag
