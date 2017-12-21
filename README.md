@@ -10,6 +10,22 @@
 > 是的，如你所见，以`$`开头的指令是它的独特标识<br>
 > 1000行左右的代码量，让应用的开发和加载biu的一瞬完成
 
+## 启动
+
+```javascript
+let app = new Biu({
+    mount: '#app',
+    data: {
+        me: 'BiuJS'
+    },
+    action: {
+        change: function() {
+            console.log('changed');
+        }
+    }
+});
+```
+
 ## BiuJS[v1.0]说明文档
 
 1. [总体结构](https://github.com/veedrin/biu/issues/1)
@@ -19,6 +35,8 @@
 3. [文本编译](https://github.com/veedrin/biu/issues/3)
 
 4. [$if 指令](https://github.com/veedrin/biu/issues/4)
+
+5. [$for 指令](https://github.com/veedrin/biu/issues/5)
 
 <br>
 
