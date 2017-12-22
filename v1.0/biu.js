@@ -246,7 +246,7 @@
             });
         });
         // 把改造过的方法挂载到arr的原型上
-        arr.__proto__ = arrayObject;
+        Object.setPrototypeOf(arr, arrayObject);
         arr.forEach((value) => {
             this.observe(value);
         });
