@@ -49,22 +49,20 @@
     }
 
     /**
-     * 递归获取嵌套属性的值
+     * 循环获取嵌套属性的值
      * @param {string} 指令和模板表达式
      * @param {object} Biu的实例
      */
     function execChain(exp, vm) {
         let chain = splitChain(exp);
-        let temp;
-        function recursion(obj, i) {
-            let prop = obj[chain[i]];
-            if (prop !== undefined) {
-                temp = prop;
-                i < chain.length && recursion(temp, i + 1);
+        let obj = vm.$data;
+        for (let i = 0; i < chain.length; i++) {
+            if (obj == null) {
+                return undefined;
             }
+            obj = obj[chain[i]];
         }
-        recursion(vm.$data, 0);
-        return temp;
+        return obj;
     }
 
     /**
