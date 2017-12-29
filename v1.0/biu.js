@@ -73,16 +73,15 @@
      */
     function assignChain(exp, vm, newValue) {
         let chain = splitChain(exp);
-        function recursion(obj, i) {
-            if (obj[chain[i]] !== undefined) {
-                if (i < chain.length - 1) {
-                    recursion(obj[chain[i]], i + 1);
-                } else {
-                    obj[chain[i]] = newValue;
-                }
+        let len = chain.length;
+        let obj = vm.$data;
+        for (let i = 0; i < len - 1; i++) {
+            if (obj == null) {
+                return undefined;
             }
+            obj = obj[chain[i]];
         }
-        recursion(vm.$data, 0);
+        obj[chain[len - 1]] = newValue;
     }
 
     /**
