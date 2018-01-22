@@ -37,9 +37,3 @@ let app = new Biu({
 4. [$if 指令](https://github.com/veedrin/biu/issues/4)
 
 5. [$for 指令](https://github.com/veedrin/biu/issues/5)
-
-<br>
-
-## flag
-
-2018年2月1日前发布[v1.1]版本，预计加入虚拟DOM，敬请期待
