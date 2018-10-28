@@ -13,20 +13,45 @@
 ## 启动
 
 ```javascript
-let app = new Biu({
+const app = new Biu({
     mount: '#app',
     data: {
-        me: 'BiuJS'
+        me: 'BiuJS',
     },
     action: {
         change: function() {
             console.log('changed');
-        }
-    }
+        },
+    },
 });
 ```
 
-## BiuJS[v1.0]说明文档
+## 构建界面
+
+```html
+<div id="app">
+    <div>{{name}} 的清单</div>
+    <ol>
+        <li $for="todo in todos">{{todo.text}}</li>
+    </ol>
+</div>
+```
+
+```javascript
+const app = new Biu({
+    mount: '#app',
+    data: {
+        name: 'biu',
+        todos: [
+            { text: '学习 HTML' },
+            { text: '学习 CSS' },
+            { text: '学习 JavaScript' },
+        ],
+    },
+});
+```
+
+## 说明文档
 
 1. [总体结构](https://github.com/veedrin/biu/issues/1)
 
@@ -37,3 +62,7 @@ let app = new Biu({
 4. [$if 指令](https://github.com/veedrin/biu/issues/4)
 
 5. [$for 指令](https://github.com/veedrin/biu/issues/5)
+
+## License
+
+[MIT](https://github.com/veedrin/biu/blob/master/LICENSE)
